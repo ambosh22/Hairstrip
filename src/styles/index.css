@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #3d2420;
+  --color-secondary: #8b4f50;
+  --color-accent: #c9807d;
+  --color-rose: #a85a5c;
+  --color-light: #fdf6f3;
+  --color-warm: #f5ebe6;
+  --color-cream: #f9f0ea;
+  --color-gold: #c4a87a;
+  --color-white: #ffffff;
+  --color-dark: #1e1410;
+  --color-text: #4a3028;
+  --color-text-light: #9a8070;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-label {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-rose);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  margin-bottom: 60px;
+  font-weight: 300;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-rose));
+  margin: 0 auto 60px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 42px;
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.btn-primary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--color-rose);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(139, 79, 80, 0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-outline:hover {
+  background: var(--color-white);
+  color: var(--color-secondary);
+  border-color: var(--color-white);
+}
