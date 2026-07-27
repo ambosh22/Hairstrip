@@ -44,7 +44,7 @@ function Contact() {
               </div>
               <div className="contact-item-text">
                 <h4>Location</h4>
-                <p>Mangaldan Public Market,<br/>Behind Veron Shoe Square</p>
+                <p>801 Tolentino Compound,<br/>Rizal St. Poblacion, Mangaldan<br/>Behind Verons Shoe Square</p>
               </div>
             </div>
 

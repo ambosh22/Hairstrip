@@ -38,7 +38,7 @@ function Footer() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
-                <span className="footer-location">Mangaldan Public Market, Behind Veron Shoe Square</span>
+                <span className="footer-location">801 Tolentino Compound, Rizal St. Poblacion, Mangaldan Behind Verons Shoe Square</span>
               </li>
               <li>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
