@@ -195,3 +195,45 @@
     letter-spacing: 4px;
   }
 }
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .logo-img {
+    height: 60px;
+  }
+
+  .logo-name {
+    font-size: 1.1rem;
+  }
+
+  .logo-tagline {
+    font-size: 0.55rem;
+    letter-spacing: 3px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+  }
+
+  .menu-toggle span {
+    width: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    height: 50px;
+  }
+
+  .logo-name {
+    font-size: 1rem;
+  }
+
+  .logo-tagline {
+    display: none;
+  }
+}
