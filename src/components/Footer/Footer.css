@@ -185,8 +185,8 @@
   }
 
   .footer-columns {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     text-align: center;
   }
 
@@ -202,7 +202,22 @@
     justify-content: center;
     text-align: left;
     width: 100%;
-    max-width: 280px;
+    max-width: 200px;
+  }
+
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 0.6rem;
+    margin-bottom: 16px;
+  }
+
+  .footer-links ul li a {
+    font-size: 0.7rem;
+  }
+
+  .footer-contact ul li a,
+  .footer-contact ul li .footer-location {
+    font-size: 0.7rem;
   }
 
   .footer-logo-img {
