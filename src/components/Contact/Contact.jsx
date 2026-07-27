@@ -62,7 +62,7 @@ function Contact() {
             </div>
           </div>
 
-          <form className="contact-form" onSubmit={(e) => {
+          <form className="contact-form" name="booking" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={(e) => {
             e.preventDefault()
             const form = e.target
             const name = form.querySelector('[name="name"]').value
@@ -81,6 +81,10 @@ function Contact() {
             )
             window.open(`mailto:zandrei07@icloud.com?subject=${subject}&body=${body}`, '_blank')
           }}>
+            <input type="hidden" name="form-name" value="booking" />
+            <p className="hidden" style={{ display: 'none' }}>
+              <label>Don't fill this out: <input name="bot-field" /></label>
+            </p>
             <div className="form-row">
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="tel" name="phone" placeholder="Phone Number" required />

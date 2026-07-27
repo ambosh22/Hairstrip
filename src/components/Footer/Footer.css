@@ -74,7 +74,7 @@
 
 .footer-contact ul li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   margin-bottom: 14px;
 }
@@ -82,6 +82,7 @@
 .footer-contact ul li svg {
   color: var(--color-accent);
   min-width: 14px;
+  margin-top: 3px;
 }
 
 .footer-contact ul li a,
@@ -90,6 +91,7 @@
   color: rgba(255, 255, 255, 0.45);
   transition: color 0.3s ease;
   font-weight: 300;
+  line-height: 1.6;
 }
 
 .footer-contact ul li a:hover {
@@ -127,7 +129,7 @@
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 40px;
     text-align: center;
   }
 
@@ -142,10 +144,28 @@
   .footer-brand-desc {
     margin: 0 auto;
     font-size: 0.8rem;
+    max-width: 100%;
+  }
+
+  .footer-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer-contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
 
   .footer-contact ul li {
     justify-content: center;
+    text-align: left;
+    width: 100%;
+    max-width: 280px;
   }
 
   .footer-links h4,
@@ -161,6 +181,10 @@
   .footer-contact ul li a,
   .footer-contact ul li .footer-location {
     font-size: 0.8rem;
+  }
+
+  .footer-bottom {
+    text-align: center;
   }
 }
 
