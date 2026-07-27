@@ -5,21 +5,21 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-grid">
-          <div className="footer-brand">
-            <div className="footer-logo">
-              <img src={logo} alt="Hair Strip Salon" className="footer-logo-img" />
-              <div>
-                <span className="footer-logo-name">Hair Strip</span>
-                <span className="footer-logo-tag">Salon</span>
-              </div>
+        <div className="footer-brand">
+          <div className="footer-logo">
+            <img src={logo} alt="Hair Strip Salon" className="footer-logo-img" />
+            <div>
+              <span className="footer-logo-name">Hair Strip</span>
+              <span className="footer-logo-tag">Salon</span>
             </div>
-            <p className="footer-brand-desc">
-              Your trusted salon for premium hair care and styling. 
-              Let us bring out the best in you.
-            </p>
           </div>
+          <p className="footer-brand-desc">
+            Your trusted salon for premium hair care and styling. 
+            Let us bring out the best in you.
+          </p>
+        </div>
 
+        <div className="footer-columns">
           <div className="footer-links">
             <h4>Quick Links</h4>
             <ul>
