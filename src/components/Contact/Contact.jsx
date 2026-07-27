@@ -16,7 +16,7 @@ function Contact() {
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
                 </svg>
               </div>
-              <div>
+              <div className="contact-item-text">
                 <h4>Phone</h4>
                 <a href="tel:09289656466">0928 965 6466</a>
               </div>
@@ -29,7 +29,7 @@ function Contact() {
                   <polyline points="22,6 12,13 2,6"/>
                 </svg>
               </div>
-              <div>
+              <div className="contact-item-text">
                 <h4>Email</h4>
                 <a href="mailto:zandrei07@icloud.com">zandrei07@icloud.com</a>
               </div>
@@ -42,7 +42,7 @@ function Contact() {
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
               </div>
-              <div>
+              <div className="contact-item-text">
                 <h4>Location</h4>
                 <p>Mangaldan Public Market,<br/>Behind Veron Shoe Square</p>
               </div>
@@ -55,7 +55,7 @@ function Contact() {
                   <polyline points="12 6 12 12 16 14"/>
                 </svg>
               </div>
-              <div>
+              <div className="contact-item-text">
                 <h4>Business Hours</h4>
                 <p>Monday - Sunday</p>
               </div>
