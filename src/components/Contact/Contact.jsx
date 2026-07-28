@@ -88,20 +88,35 @@ function Contact() {
               <label>Don't fill this out: <input name="bot-field" /></label>
             </p>
             <div className="form-row">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="tel" name="phone" placeholder="Phone Number" required />
+              <div className="form-field">
+                <label className="form-label">Name</label>
+                <input type="text" name="name" placeholder="Your Name" required />
+              </div>
+              <div className="form-field">
+                <label className="form-label">Contact Number</label>
+                <input type="tel" name="phone" placeholder="Phone Number" required />
+              </div>
             </div>
-            <select name="service" required defaultValue="">
-              <option value="" disabled>Select a Service</option>
-              <option>Haircut & Styling</option>
-              <option>Hair Coloring</option>
-              <option>Hair Treatment</option>
-              <option>Hair Rebonding</option>
-              <option>Perming</option>
-              <option>Bridal Hair</option>
-            </select>
-            <input type="date" name="appointment-date" required />
-            <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+            <div className="form-field">
+              <label className="form-label">Service</label>
+              <select name="service" required defaultValue="">
+                <option value="" disabled>Select a Service</option>
+                <option>Haircut & Styling</option>
+                <option>Hair Coloring</option>
+                <option>Hair Treatment</option>
+                <option>Hair Rebonding</option>
+                <option>Perming</option>
+                <option>Bridal Hair</option>
+              </select>
+            </div>
+            <div className="form-field">
+              <label className="form-label">Date of Appointment</label>
+              <input type="date" name="appointment-date" required />
+            </div>
+            <div className="form-field">
+              <label className="form-label">Message</label>
+              <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
             <button type="submit" className="btn btn-primary">Book Appointment</button>
           </form>
         </div>
