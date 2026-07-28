@@ -6,7 +6,6 @@ const reels = [
   { id: 2, url: 'https://www.facebook.com/reel/4139147766357645', title: 'Styling Session' },
   { id: 3, url: 'https://www.facebook.com/reel/4228453764108708', title: 'Color Works' },
   { id: 4, url: 'https://www.facebook.com/reel/1168066211450852', title: 'Client Review' },
-  { id: 5, url: 'https://www.facebook.com/reel/1658649714751895', title: 'Salon Highlights' },
   { id: 6, url: 'https://www.facebook.com/reel/649909405728502', title: 'Fresh Look' },
   { id: 7, url: 'https://www.facebook.com/reel/2119962572176735', title: 'Makeover' },
 ]
