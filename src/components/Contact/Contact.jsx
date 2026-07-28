@@ -110,7 +110,7 @@ function Contact() {
               </select>
             </div>
             <div className="form-field">
-              <label className="form-label">Date of Appointment</label>
+              <label className="form-label">Preferred Appointment</label>
               <input type="date" name="appointment-date" required />
             </div>
             <div className="form-field">
