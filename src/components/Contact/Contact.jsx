@@ -68,6 +68,7 @@ function Contact() {
             const name = form.querySelector('[name="name"]').value
             const phone = form.querySelector('[name="phone"]').value
             const service = form.querySelector('[name="service"]').value
+            const appointmentDate = form.querySelector('[name="appointment-date"]').value
             const message = form.querySelector('[name="message"]').value
 
             const subject = encodeURIComponent(`Appointment Booking - ${service}`)
@@ -76,6 +77,7 @@ function Contact() {
               `Name: ${name}\n` +
               `Phone: ${phone}\n` +
               `Service: ${service}\n` +
+              `Appointment Day: ${appointmentDate}\n` +
               `Message: ${message}\n\n` +
               `Thank you!`
             )
@@ -98,6 +100,7 @@ function Contact() {
               <option>Perming</option>
               <option>Bridal Hair</option>
             </select>
+            <input type="date" name="appointment-date" required />
             <textarea name="message" rows="4" placeholder="Your Message"></textarea>
             <button type="submit" className="btn btn-primary">Book Appointment</button>
           </form>

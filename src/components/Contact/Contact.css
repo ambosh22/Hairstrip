@@ -108,6 +108,10 @@
   cursor: pointer;
 }
 
+.contact-form input[type="date"] {
+  margin-bottom: 16px;
+}
+
 .contact-form textarea {
   resize: vertical;
   min-height: 100px;
