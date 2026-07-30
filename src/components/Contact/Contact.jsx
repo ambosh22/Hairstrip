@@ -69,6 +69,7 @@ function Contact() {
             const phone = form.querySelector('[name="phone"]').value
             const service = form.querySelector('[name="service"]').value
             const appointmentDate = form.querySelector('[name="appointment-date"]').value
+            const appointmentTime = form.querySelector('[name="appointment-time"]').value
             const message = form.querySelector('[name="message"]').value
 
             const subject = encodeURIComponent(`Appointment Booking - ${service}`)
@@ -78,6 +79,7 @@ function Contact() {
               `Phone: ${phone}\n` +
               `Service: ${service}\n` +
               `Appointment Day: ${appointmentDate}\n` +
+              `Appointment Time: ${appointmentTime}\n` +
               `Message: ${message}\n\n` +
               `Thank you!`
             )
@@ -109,9 +111,15 @@ function Contact() {
                 <option>Bridal Hair</option>
               </select>
             </div>
-            <div className="form-field">
-              <label className="form-label">Preferred Appointment</label>
-              <input type="date" name="appointment-date" required />
+            <div className="form-row">
+              <div className="form-field">
+                <label className="form-label">Preferred Date</label>
+                <input type="date" name="appointment-date" required />
+              </div>
+              <div className="form-field">
+                <label className="form-label">Preferred Time</label>
+                <input type="time" name="appointment-time" required />
+              </div>
             </div>
             <div className="form-field">
               <label className="form-label">Message</label>
